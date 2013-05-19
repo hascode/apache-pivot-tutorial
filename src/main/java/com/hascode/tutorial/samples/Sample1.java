@@ -1,4 +1,4 @@
-package com.hascode.tutorial.sample1;
+package com.hascode.tutorial.samples;
 
 import org.apache.pivot.collections.Map;
 import org.apache.pivot.wtk.Application;
@@ -10,9 +10,9 @@ import org.apache.pivot.wtk.Label;
 import org.apache.pivot.wtk.PushButton;
 import org.apache.pivot.wtk.Window;
 
-public class Main {
+public class Sample1 {
 	public static void main(final String[] args) {
-		DesktopApplicationContext.main(MyApp.class, new String[] {});
+		DesktopApplicationContext.main(MyApp.class, args);
 	}
 
 	public static class MyApp extends Window implements Application {
@@ -27,13 +27,13 @@ public class Main {
 		}
 
 		private void compose() {
-			this.setTitle("hasCode.com - Apache Pivot Example 1 - Programmatic construction");
-			this.setMaximized(true);
 			section.add(label);
 			btOpenFileDialog.setButtonData("Select File..");
 			section.add(btOpenFileDialog);
 			form.getSections().add(section);
 			this.add(form);
+			this.setTitle("hasCode.com - Apache Pivot Example 1 - Programmatic construction");
+			this.setMaximized(true);
 		}
 
 		public void startup(final Display display,
