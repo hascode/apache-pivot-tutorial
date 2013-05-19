@@ -1,0 +1,11 @@
+<myApp:Sample2.MyApp title="hasCode.com - Apache Pivot Example 2 - BXML Template" maximized="true"
+  xmlns:bxml="http://pivot.apache.org/bxml"
+  xmlns:myApp="com.hascode.tutorial.samples"
+  xmlns="org.apache.pivot.wtk">
+  <Form>
+  <Form.Section>
+	<Label text="Select file to upload..."/>
+	<PushButton bxml:id="btOpenFileDialog" buttonData="Select File.."/>
+	</Form.Section>
+	</Form>
+</myApp:Sample2.MyApp>
